@@ -1,7 +1,5 @@
 /******************************************************************************
-
 Con este programa calculas todo lo necesario para un contrato
-
 *******************************************************************************/
 
 #include <stdio.h>
@@ -30,7 +28,7 @@ float hefmt;
 float hefme;
 float herht;
 float herhe;
-flota liq;
+float liq;
 int main()
 {
     printf("Pon el salario base:");
@@ -79,10 +77,10 @@ int main()
     
     printf("      Trabajador      Empresa  \n ");
     printf("cc     %f      %f \n",cct,cce);
-    printf("cp             %f \n",cpe);
+    printf("cp      ---            %f \n",cpe);
     printf("dmp    %f      %f \n",dmpt,dmpe);
     printf("fp     %f      %f \n",fpt,fpe);
-    printf("fgs    %f \n",fgse);
+    printf("fgs     ---            %f \n",fgse);
     printf("hefm   %f      %f \n",hefmt,hefme);
     printf("herh   %f      %f \n \n",herht,herhe);
     liq=sbruto-cct-dmpt-fpt-hefmt-herht;
