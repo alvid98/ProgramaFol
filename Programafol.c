@@ -3,33 +3,9 @@ Con este programa calculas todo lo necesario para un contrato
 *******************************************************************************/
 
 #include <stdio.h>
-int sbase;
-int antiguedad;
-int plustrans;
-int plusherr;
-int hefm;
-int herh;
-float irpf;
-int idioma;
-float sbruto;
-int ppe;
-int bccc;
-int bccp;
-float cirpf;
-float cct;
-float cce;
-float cpe;
-float dmpt;
-float dmpe;
-float fpt;
-float fpe;
-float fgse;
-float hefmt;
-float hefme;
-float herht;
-float herhe;
-float dev;
-float liq;
+int sbase,antiguedad,plustrans,plusherr,hefm,herh,idioma,ppe,bccc,bccp;
+float sbruto,cirpf,cct,cce,cpe,dmpt,dmpe,fpt,fpe,fgse,hefmt,hefme,herht,herhe,dev,liq,atep,atp,irpf ;
+
 int main()
 {
     printf("Pon el salario base:");
@@ -48,6 +24,8 @@ int main()
     scanf("%d",&idioma);
     printf("Pon el porcentaje de irpf:");
     scanf("%f",&irpf);
+    printf("Pon el porcentaje de at y ep");
+    scanf("%F",&atp);
     
     sbruto=sbase+idioma+antiguedad+hefm+herh+plusherr+plustrans;
     printf("\n \nEl salario bruto es:%f \n",sbruto);
@@ -75,6 +53,7 @@ int main()
     hefme=hefm*0.12;
     herht=herh*0.047;
     herhe=herh*0.256;
+    atep=bccp*atp;
     
     printf("      Trabajador      Empresa  \n ");
     printf("cc     %f      %f \n",cct,cce);
@@ -84,6 +63,7 @@ int main()
     printf("fgs     ---            %f \n",fgse);
     printf("hefm   %f      %f \n",hefmt,hefme);
     printf("herh   %f      %f \n \n",herht,herhe);
+    printf("at y ep  ---            %f \n",atep);
     dev=cct+dmpt+fpt+hefmt+herht;
     printf("El devengado total es:%f",dev);
     liq=sbruto-dev;
