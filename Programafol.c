@@ -83,7 +83,9 @@ int main()
     printf("fgs     ---            %f \n",fgse);
     printf("hefm   %f      %f \n",hefmt,hefme);
     printf("herh   %f      %f \n \n",herht,herhe);
-    liq=sbruto-cct-dmpt-fpt-hefmt-herht;
+    dev=cct+dmpt+fpt+hefmt+herht;
+    printf("El devengado total es:%f",dev);
+    liq=sbruto-dev;
     printf("El liquido total es:%f",liq);
     return 0;
 }
