@@ -28,6 +28,7 @@ float hefmt;
 float hefme;
 float herht;
 float herhe;
+float dev;
 float liq;
 int main()
 {
