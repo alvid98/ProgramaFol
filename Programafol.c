@@ -3,31 +3,37 @@ Con este programa calculas todo lo necesario para un contrato
 *******************************************************************************/
 
 #include <stdio.h>
-int sbase,antiguedad,plustrans,plusherr,hefm,herh,idioma,ppe,bccc,bccp;
-float sbruto,cirpf,cct,cce,cpe,dmpt,dmpe,fpt,fpe,fgse,hefmt,hefme,herht,herhe,dev,liq,atep,atp,irpf ;
+int sbase,antiguedad,comp1,comp2,comp3,comp4,hefm,herh,idioma,ppe,bccc,bccp;
+float sbruto,cirpf,cct,cce,cpe,dmpt,dmpe,fpt,fpe,fgse,hefmt,hefme,herht,herhe,dev,liq,atep,atp,irpf,pext;
 
 int main()
 {
     printf("Pon el salario base:");
-    scanf("%d",&sbase);
+    scanf("%d",&sbase);w
     printf("Pon la antiguedad:");
     scanf("%d",&antiguedad);
     printf("Pon las hefm:");
     scanf("%d",&hefm);
     printf("Pon las otras he:");
     scanf("%d",&herh);
-    printf("Pon el plus de transporte:");
-    scanf("%d",&plustrans);
-    printf("Pon el plus de herramientas:");
-    scanf("%d",&plusherr);
+    printf("Pon complemento1");
+    scanf("%d",&comp1);
+    printf("Pon complemento2");
+    scanf("%d",&comp2);
+    printf("Pon complemento3");
+    scanf("%d",&comp3);
+    printf("Pon complemento4");
+    scanf("%d",&comp4);
     printf("Pon el complemento por idioma:");
     scanf("%d",&idioma);
+    printf("Paga extra en este mes:");
+    scanf("%f"&pext);
     printf("Pon el porcentaje de irpf:");
     scanf("%f",&irpf);
     printf("Pon el porcentaje de at y ep");
     scanf("%F",&atp);
     
-    sbruto=sbase+idioma+antiguedad+hefm+herh+plusherr+plustrans;
+    sbruto=sbase+idioma+antiguedad+hefm+herh+comp1+comp2,comp3,comp4+pext;
     printf("\n \nEl salario bruto es:%f \n",sbruto);
     
     ppe=((sbase+antiguedad)*2)/12;
