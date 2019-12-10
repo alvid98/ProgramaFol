@@ -9,7 +9,7 @@ float sbruto,cirpf,cct,cce,cpe,dmpt,dmpe,fpt,fpe,fgse,hefmt,hefme,herht,herhe,de
 int main()
 {
     printf("Pon el salario base:");
-    scanf("%d",&sbase);w
+    scanf("%d",&sbase);
     printf("Pon la antiguedad:");
     scanf("%d",&antiguedad);
     printf("Pon las hefm:");
